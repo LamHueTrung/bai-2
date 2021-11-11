@@ -18,46 +18,143 @@
             <li class="header_items">
                 <a href="https://lamhuetrung.github.io/index.html">
                     <i class="fas fa-home"></i>
-                    <span>Home</span>
+                    <span></span>
                 </a>
             </li>
            
             <li class="header_items">
                 <a href="#bai-tap">
                     <i class="fas fa-book"></i>
-                    <span>Bài tập</span>
+                    <span></span>
                 </a>
             </li>
             <li class="header_items">
                 <a href="https://www.facebook.com/T%E1%BB%B1-h%E1%BB%8Dc-l%E1%BA%ADp-Tr%C3%ACnh-c%C3%B9ng-LHT-110968584718753">
                     <i class="fas fa-question"></i>
-                    <span>Hỏi</span>
+                    <span></span>
                 </a>
             </li>
         </ul>
     </header>
     <div class="container">
-        <h1>Câu lệnh điều kiện </h1>
-        <video class="video" controls>
-            <source src="./assets/video/video.webm" type="video/mp4">
-        </video>
-        <a href="https://lamhuetrung.github.io/bai-3/" class="btn-next">Bài tiếp theo</a>
-        <div class="container__note">
-            <h2>Nhắc nhở: có các bài tập nhé.</h2>
-        </div>
-        <div class="container__learn" id="bai-tap">  
-            <div  class="learn__heading">BÀI TẬP</div>
-            <div class="learn__content" id="bai-tap">
-                <div class="learn__ex">
-                    <a class="learn__slide-1 bai-tap">Bài tập 1</a>
-                    <span class="noidung-baitap">
-                        Viết chương trình kiểm tra hai số nguyên dương a, b có cùng nằm trong khoảng 40..50 hay không? (1: cùng trong khoảng 40..50; 0: không cùng trong khoảng 40..50)
-                    </span>
+        <div class="gird__column-2">
+            <div class="content_LT">
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Project</h1>
+                    <span class="BT__noi-dung">Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên a. Sau đó kiểm tra xem nếu a dương thì hiển thị ra:</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">1</code>
+                    </pre>
+                    <span class="BT__noi-dung">Ngược lại, nếu a là số âm thì hiển thị ra:</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">0</code>
+                    </pre>
+                    <h1 class="BT__tieu-de">Lý Thuyết</h1>
+                    <span class="BT__noi-dung">Để làm được bài này bận cần biết cách sử dụng mệnh đề if hoặc mệnh đề if-else</span>
+                    <span class="BT__noi-dung--TD">Mệnh đề if:</span>
+                    <span class="BT__noi-dung">Mệnh đề if được dùng để kiểm tra một biểu thức điều kiện có đúng hay không, nếu đúng thì các câu lệnh bên trong mệnh đề if sẽ được thực thi. Ví dụ để kiểm tra xem n có chia hết cho 2 không bạn có thể làm như sau:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+if (n % 2 == 0) {
+// Nếu n chia hết cho 2 thì hiển thị n is an even number
+    printf("n is an even number");
+}
+if (n % 2 != 0) {
+// Nếu n không chia hết cho 2 thì hiển thị n is an odd number
+    printf("n is an odd number");
+}
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Trong ngôn ngữ lập trình C, == là toán tử kiểm tra xem 2 giá trị có bằng nhau không, != là toán tử kiểm tra xem 2 giá trị có khác nhau không. Như ở ví dụ trên if (n % 2 == 0) là câu lệnh kiểm tra xem n chia dư cho 2 có bằng 0 không, if (n % 2 != 0) là câu lệnh kiểm tra xem n chia dư cho 2 có khác 0 không.</span>
+                    <span class="BT__noi-dung">Lưu ý: Một số bạn hay nhầm giữa toán tử = và toán tử ==, toán tử = là toán tử gán giá trị chứ không phải toán tử so sánh nên nếu bạn dùng toán tử = để so sánh thì chương trình sẽ cho ra kết quả sai.</span>
+                    <span class="BT__noi-dung--TD">Mệnh đề if-else:</span>
+                    <span class="BT__noi-dung">Tương tự như mệnh đề if nhưng nếu biểu thức điều kiện trong if sai thì đoạn code bên trong else sẽ được thực thi:</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+if (n % 2 == 0) {
+// Nếu n chia hết cho 2 thì hiển thị n is an even number
+    printf("n is an even number");
+} else {
+// Ngược lại (n không chia hết cho 2) thì hiển thị n is an odd number
+    printf("n is an odd number");
+}
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">Đọc tới đây bạn đã biết cách sử dụng mệnh đề if và if-else, hãy quay lại phần bài tập và làm thử.</span>
+                    
                 </div>
-                <!-- <a class="learn__slide-1">Bài tập 2</a>
-                <a class="learn__slide-1">Bài tập 3</a>
-                <a class="learn__slide-1">Bài tập 4</a> -->
-                
+            </div>
+            <div class="content__HD">
+                <h1>Chi tiết câu lệnh điều kiện If </h1>
+                <video class="video" controls>
+                    <source src="./assets/video/video.webm" type="video/mp4">
+                </video>
+                <a class="btn-next not-next">Bài tiếp theo</a>
+                <div class="container__note">
+                    <h2>Nhắc nhở: có các bài tập nhé.</h2>
+                </div>
+                <div class="container__learn" id="bai-tap">  
+                    <span  class="learn__heading">BÀI TẬP</span>
+                    <div class="learn__content" id="bai-tap">
+                        <div class="learn__ex">
+                            <a class="learn__slide-1 bai-tap">Bài tập 1</a>
+                            <span class="noidung-baitap">
+                                <pre class="BT__output">
+                                    <code class="BT__output">
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n và hiển thị ra màn hình:
+
+Nếu n là số nguyên dương thì hiển thị ra: n is a positive number
+Nếu n là số nguyên âm thì hiển thị ra: n is a negative number
+Nếu n = 0 thì hiển thị ra: n is equal to 0
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="learn__ex">
+                            <a class="learn__slide-1 bai-tap">Bài tập 2</a>
+                            <span class="noidung-baitap">
+                                <pre class="BT__output">
+                                    <code class="BT__output">
+Viết chương trình nhập từ bàn phím 2 số nguyên a, b. Bạn hãy kiểm tra xem giá trị của cả a và b có khác 0 không. Nếu có hiển thị:
+    a is not equal to 0 and b is not equal to 0
+Ngược lại nếu a hoặc b có giá trị bằng 0 thì hiển thị:
+    a is equal to 0 or b is equal to 0
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="learn__ex">
+                            <a class="learn__slide-1 bai-tap">Bài tập 3</a>
+                            <span class="noidung-baitap">
+                                <pre class="BT__output">
+                                    <code class="BT__output">
+Viết chương trình nhập từ bàn phím 3 số nguyên a, b, c. Sau đó hãy kiểm tra xem a, b, c có tạo thành một dãy số tăng dần hoặc giảm dần hay không.
+
+Nếu a ≤ b và b ≤ c thì chỉ hiển thị: increasing
+Nếu a ≥ b và b ≥ c thì hiển thị: decreasing
+Ngược lại, nếu không vào 1 trong hai trường hợp trên thì hiển thị: neither increasing nor decreasing order
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="learn__ex">
+                            <a class="learn__slide-1 bai-tap">Bài tập 4</a>
+                            <span class="noidung-baitap">
+                                <pre class="BT__output">
+                                    <code class="BT__output">
+Cho 2 biến kiểu số nguyên a, b và 1 biến kiểu ký tự c. Cả 3 biến này đều được được nhập từ bàn phím.
+Biết biến c là 1 trong 4 ký tự '+', '-', '*', '/'.
+Bạn hãy viết chương trình hiển thị giá trị của biểu thức khi áp dụng phép toán c lên a và b.
+    Ví dụ nếu bạn nhập a = 7, c = '+', b = 9 như bên dưới: 7 + 9
+    Thì màn hình sẽ hiển thị ra: 16
+
+GỢi ý : khai báo c là kiểu char ( kí tự và dùng câu lệnh If: nếu c == '+' thì a + b, ....)
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
